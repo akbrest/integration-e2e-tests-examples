@@ -2,37 +2,145 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  margin: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.user-card {
+  max-width: 50%;
+  margin: auto;
+  background-color: brown;
+  padding: 10px;
+}
+
+.user-header {
+  background-color: bisque;
+  padding: 10px;
+}
+
+.user-body {
+  background-color: coral;
+  padding: 10px;
+}
+
+.post-link {
+  font-size: 25px;
+  margin: 15px;
+}
+
+.post {
+  max-width: 50%;
+  margin: 25px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: antiquewhite;
+}
+
+.container {
+  max-width: 50%;
+  margin: auto;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #212426;
+  color: #fff;
+}
+
+.add-todo__container {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.add-todo__input {
+  width: 95%;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.098);
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.add-todo__input:hover,
+.add-todo__input:focus {
+  border: 2px solid #fff;
+}
+
+.add-todo__button {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #212426;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+}
+
+.add-todo__button:hover {
+  background-color: #212426;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.all-todos__container {
+  margin-top: 3rem;
+}
+
+.todo__container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.todo__text {
+  font-size: 1rem;
+  margin: 1rem;
+  flex-basis: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo__container .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.todo__container .icon:hover {
+  transform: scale(1.2);
+}
+
+.todo__container .checked {
+  color: green;
+}
+
+.todo__delete {
+  color: #ff0000;
+}
+
+.todo__container .complete {
+  color: rgba(221, 221, 221, 0.354);
+  text-decoration: line-through;
 }
