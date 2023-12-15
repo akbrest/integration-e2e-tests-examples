@@ -3,7 +3,7 @@ import Todo from './Todo';
 const Todos = ({ todos, toggleTodo, deleteTodo }) => {
   return (
     <div className="all-todos__container">
-      <h2>
+      <h2 data-testid="todo-counter">
         {todos.length} {todos.length > 1 ? 'Todos' : 'Todo'}
       </h2>
       {todos.map((todo) => (
